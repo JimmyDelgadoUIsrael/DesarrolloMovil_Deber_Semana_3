@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="_008_jdelgadoDS3.Views.vPrincipal"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="vPrincipal">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Sistema de calificaciones"
+                TextColor="Chocolate"
+                VerticalOptions="Center" />
+
+            <Label
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Deber Semana 2"
+                TextColor="Chocolate"
+                VerticalOptions="Center" />
+
+            <Label
+                FontSize="10"
+                HorizontalOptions="Center"
+                Text="By Jimmy Delgado"
+                TextColor="Black"
+                VerticalOptions="Center" />
+
+            <Picker x:Name="pckEstudiantes" Title="Estudiantes:" />
+
+            <Label Text="Parcial 1" />
+
+            <Entry
+                x:Name="txtNotaSeg1"
+                Keyboard="Numeric"
+                MaxLength="2"
+                Placeholder="Ingrese la nota seguimiento" />
+
+            <Entry
+                x:Name="txtNotaExa1"
+                Keyboard="Numeric"
+                MaxLength="2"
+                Placeholder="Ingrese la  nota examen" />
+
+            <Label Text="Parcial 2" />
+
+            <Entry
+                x:Name="txtNotaSeg2"
+                Keyboard="Numeric"
+                MaxLength="2"
+                Placeholder="Ingrese la nota seguimiento" />
+
+            <Entry
+                x:Name="txtNotaExa2"
+                Keyboard="Numeric"
+                MaxLength="2"
+                Placeholder="Ingrese la  nota examen" />
+
+            <DatePicker
+                x:Name="dtpckDate"
+                Format="dd/MM/yyyy"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            <Button
+                x:Name="btnVerificar"
+                Clicked="btnVerificar_Clicked"
+                Text="Verificar" />
+
+
+            <Frame
+                x:Name="frameResultado"
+                Padding="10"
+                BorderColor="Gray"
+                CornerRadius="10"
+                HasShadow="False">
+                <Label
+                    x:Name="lblInfo"
+                    Text=""
+                    TextColor="Black" />
+            </Frame>
+
+            <Button
+                x:Name="btnLimpiar"
+                BackgroundColor="DarkGray"
+                Clicked="btnLimpiar_Clicked"
+                Text="Limpiar Campos" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
