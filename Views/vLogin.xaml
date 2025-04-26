@@ -20,10 +20,5 @@
             Clicked="btnIngresar_Clicked"
             Text="Ingresar" />
 
-
-
-
-
-
     </VerticalStackLayout>
 </ContentPage>
